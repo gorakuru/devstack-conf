@@ -34,7 +34,7 @@ disable_service q-meta
 disable_service q-l3
 enable_service neutron
 
-HOST_IP=10.44.178.190
+HOST_IP=CONTROLLER
 MULTI_HOST=1
 
 [[post-install|$NOVA_CONF]]
@@ -57,7 +57,7 @@ apic_system_id=openstackapic
 enable_security_group = False
 firewall_driver = neutron.agent.firewall.NoopFirewallDriver
 [ml2_cisco_apic]
-apic_hosts = 10.44.178.21
+apic_hosts = APIC_IPADDRESS
 apic_username = admin
 apic_password = Nep1a12345
 apic_use_ssl = False

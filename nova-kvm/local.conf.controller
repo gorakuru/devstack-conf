@@ -29,7 +29,7 @@ disable_service q-meta
 disable_service q-l3
 enable_service neutron
 
-HOST_IP=10.44.178.190
+HOST_IP=CONTROLLER
 MULTI_HOST=1
 
 [[post-config|$NEUTRON_CONF]]
@@ -40,7 +40,7 @@ service_plugins = networking_cisco.services.l3_router.l3_apic.ApicL3ServicePlugi
 [DEFAULT]
 apic_system_id=openstackapic
 [ml2_cisco_apic]
-apic_hosts = 10.44.178.21
+apic_hosts = APIC_IPADDRESS
 apic_username = admin
 apic_password = Nep1a12345
 apic_use_ssl = False
